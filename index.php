@@ -8,14 +8,11 @@ $students = [
     "Nicolas" => 19
 ];
 
- foreach ($students as $noms => $age){
-     echo '<h1>' . $noms . ' a ' . $age . ' ans. </h1>';
- }
+foreach ($students as $noms => $age){
+    $somme += $age / count($students);
+    echo '<h1>' . $noms . ' a ' . $age . ' ans. </h1>';
+}
 
-
-
-$Moyenne = (42+51+45+48+19) / 5;
-echo '<h1> La moyenne est de ' . $Moyenne . ' ans </h1>';
-
+echo 'L\'age moyen est de ' . $somme. ' ans';
 
 ?>
